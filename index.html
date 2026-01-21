@@ -4,30 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>သံစဉ် (Thansin) - AI Companion</title>
+    <title>သံစဉ် (Thansin) - AI Girlfriend</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pyidaungsu:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --rose-500: #f43f5e;
-        }
         body {
-            font-family: 'Pyidaungsu', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Pyidaungsu', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             -webkit-tap-highlight-color: transparent;
-        }
-        ::-webkit-scrollbar {
-            width: 4px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #fecdd3;
-            border-radius: 10px;
+            overscroll-behavior-y: contain;
         }
         @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slide-in-from-bottom-2 { 
-            from { transform: translateY(8px); opacity: 0; } 
+            from { transform: translateY(12px); opacity: 0; } 
             to { transform: translateY(0); opacity: 1; } 
         }
-        .animate-in { animation: 0.3s ease-out both; }
+        .animate-in { animation: 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
         .fade-in { animation-name: fade-in; }
         .slide-in-from-bottom-2 { animation-name: slide-in-from-bottom-2; }
     </style>
@@ -42,7 +33,7 @@
 }
 </script>
 </head>
-<body class="bg-rose-50 overflow-hidden antialiased">
+<body class="bg-[#FFF0F3] antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
 </body>
